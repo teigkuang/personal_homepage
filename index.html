@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黎广 · Android 高级开发工程师</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%230B1220'/%3E%3Cpath d='M3 12h4l2-6 4 12 2-6h6' fill='none' stroke='%2322D3EE' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-main">
+      <div class="avatar"><img src="img/avatar.jpg" alt="黎广头像"></div>
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="mk"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#22D3EE" opacity="0.18"/><path d="M3 12h4l2-6 4 12 2-6h6" fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          音视频 · 嵌入式 Android
+        </div>
+        <h1>黎广</h1>
+        <div class="role">Android 高级开发工程师 <span>·</span> 音视频 / 嵌入式方向</div>
+        <p class="desc">10 年 + Android 客户端经验，专注音视频、嵌入式与系统级开发。从 0 到 1 交付儿童 AI 相机设备端，落地 GB28181、硬件编码、实时对讲与多 SoC 适配。</p>
+        <div class="cta">
+          <button class="btn primary" onclick="openContact()">联系我</button>
+          <a class="btn ghost" href="card.html?from=home">查看名片</a>
+          <a class="btn ghost" href="manual/index.html" target="_blank" rel="noopener">案例展示</a>
+          <a class="btn ghost" href="#timeline">查看经历</a>
+        </div>
+      </div>
+    </div>
+    <div class="stat">
+      <a class="stat-item" href="javascript:void(0)" onclick="showDetail('exp')">
+        <div class="num">10+</div><div class="lbl">年 Android 经验</div>
+        <div class="stat-go">点击查看详情 →</div>
+      </a>
+      <a class="stat-item" href="javascript:void(0)" onclick="showDetail('mvp')">
+        <div class="num">0→1</div><div class="lbl">3 个月交付 MVP</div>
+        <div class="stat-go">点击查看详情 →</div>
+      </a>
+      <a class="stat-item" href="javascript:void(0)" onclick="showDetail('orders')">
+        <div class="num">1400+</div><div class="lbl">累计产品订单</div>
+        <div class="stat-go">点击查看详情 →</div>
+      </a>
+      <a class="stat-item" href="javascript:void(0)" onclick="showDetail('bigtech')">
+        <div class="num">8 段</div><div class="lbl">大厂生态经历</div>
+        <div class="stat-go">点击查看详情 →</div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">01</span><span class="sec-title">关于我</span><span class="sec-line"></span></div>
+    <p>我在 Android 客户端深耕超过十年，横跨消费 AI 智能硬件、OEM 系统应用（华为 / OPPO / 荣耀生态）、金融终端与运维工具。<b>音视频 + 嵌入式</b>是我最聚焦的方向：执法记录仪设备软件落地 GB28181 国标接入、H.264 / H.265 硬件编码、TRTC 实时对讲与 MTK / 展锐多 SoC 适配。</p>
+    <p>我擅长 <b>0 到 1 的完整交付</b>——3 个月从零做出儿童 AI 相机设备端 MVP，并持续迭代至 5-6 个大版本；也重视<b>工程质量</b>，主导过包名重构、密钥出库、依赖锁版本、环境隔离与 Lint 落地。大厂生态项目让我习惯按规范交付、跨团队协作。</p>
+  </div>
+</section>
+
+<section class="skills">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">02</span><span class="sec-title">核心技能</span><span class="sec-line"></span></div>
+    <div class="skill-grid">
+      <div class="skill">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.7" stroke-linecap="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>音视频</h3>
+        <ul><li>GB28181 国标接入</li><li>H.264 / H.265（MediaCodec）</li><li>TRTC 实时对讲</li><li>录制回放 · G.711/AAC</li></ul>
+      </div>
+      <div class="skill">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5h8v2M7 12h2M11 12h6"/></svg>嵌入式</h3>
+        <ul><li>android.uid.system</li><li>MTK / 展锐 SoC 适配</li><li>摄像头 · 红外 · 多摄</li><li>蓝牙 / 网关通信</li></ul>
+      </div>
+      <div class="skill">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg>Android</h3>
+        <ul><li>Java · Kotlin</li><li>四大组件 · 自定义 View</li><li>Jetpack · 组件化</li><li>ActivityEmbedding</li></ul>
+      </div>
+      <div class="skill">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6M12 19h8"/></svg>工程治理</h3>
+        <ul><li>性能优化 · 反编译分析</li><li>Lint · 环境隔离</li><li>构建 · 签名 · 单元测试</li><li>Git / SVN</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">03</span><span class="sec-title">代表项目</span><span class="sec-line"></span></div>
+    <div class="project-grid">
+      <div class="project">
+        <span class="tag">音视频 · 嵌入式</span>
+        <h3>KDVR 执法记录仪设备软件</h3>
+        <p>自研 SIP 信令 + RTP 落地 GB28181 国标接入；MediaCodec H.264/H.265 硬编降 CPU；接入 TRTC 实时对讲；覆盖红外滤光、多摄、拍照分辨率 200 万 - 5400 万像素及多 SoC 适配。</p>
+        <a class="project-link" href="manual/index.html" target="_blank" rel="noopener">查看配套技术手册 →</a>
+      </div>
+      <div class="project" id="proj-ai-cam">
+        <span class="tag">AI · 端侧</span>
+        <h3>学而佳 AI 相机设备端</h3>
+        <p>0 到 1 开发，3 个月交付 MVP；独立完成端侧语音识别 + TTS 全链路、图生图 / 图生视频；设计弱网缓存重传；上线后迭代 5-6 个大版本，累计订单 1400+。</p>
+      </div>
+      <div class="project">
+        <span class="tag">硬件通信</span>
+        <h3>道通充电桩控制器与运维 App</h3>
+        <p>蓝牙 / 网关通信、桩数据读写与云端同步、多渠道多型号构建；引入 AI 编程工具缩短问题定位周期。</p>
+      </div>
+      <div class="project">
+        <span class="tag">系统优化</span>
+        <h3>荣耀系统管家大屏适配</h3>
+        <p>基于 ActivityEmbedding 完成折叠屏 / 平板分屏适配；治理内存泄漏、Crash、卡顿与跨应用事件传递。</p>
+      </div>
+      <div class="project">
+        <span class="tag">多版本迭代</span>
+        <h3>OPPO 海外主题 / 乐划锁屏</h3>
+        <p>ColorOS 全球预装应用，历 7.0 - 13.0 多版本；UI 性能优化、锁屏 / 配置 / JS 模块拆分改造。</p>
+      </div>
+      <div class="project">
+        <span class="tag">金融级</span>
+        <h3>农金通 / 移动营销系统</h3>
+        <p>银行金融终端，基于 ISO8583 协议实现存取款 / 转账交易，集成读卡、指纹、签名、打印机硬件，SQLite 缓存补录保障交易不中断。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline" class="timeline">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">04</span><span class="sec-title">工作经历</span><span class="sec-line"></span></div>
+    <div class="tl-grid">
+      <div class="tl-row"><div class="tl-time">2025.04 - 2026.09</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 应用开发工程师</h3><div class="co">深圳市金泰谊电子</div><p>执法记录仪音视频 + 儿童 AI 相机 0→1，GB28181 / 硬编 / TRTC / 多 SoC / 工程治理。</p></div></div>
+      <div class="tl-row"><div class="tl-time">2024.10 - 2025.03</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 开发工程师</h3><div class="co">深圳市道通科技</div><p>新能源充电桩控制器与运维 App，蓝牙 / 网关通信、多渠道构建。</p></div></div>
+      <div class="tl-row"><div class="tl-time">2024.04 - 2024.08</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 开发工程师（外包）</h3><div class="co">荣耀终端</div><p>系统管家大屏适配，ActivityEmbedding、性能优化。</p></div></div>
+      <div class="tl-row"><div class="tl-time">2021.07 - 2024.02</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 开发工程师（外包）</h3><div class="co">OPPO 移动通信</div><p>ColorOS 海外主题 / 乐划锁屏，7.0-13.0 多版本迭代与模块拆分。</p></div></div>
+      <div class="tl-row"><div class="tl-time">2019.07 - 2021.07</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 开发工程师（外包）</h3><div class="co">华为技术</div><p>华为主题应用（EMUI），UI、适配、详情页，vlayout 与自定义布局。</p></div></div>
+      <div class="tl-row"><div class="tl-time">2019.02 - 2019.06</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 开发工程师（外派）</h3><div class="co">OPPO 移动通信</div><p>OTest 自动化测试客户端，MVP 架构、USB 任务下发、AIDL 进程通信。</p></div></div>
+      <div class="tl-row"><div class="tl-time">2017.10 - 2018.12</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 开发工程师</h3><div class="co">深圳银点融信</div><p>农金通 / 移动营销，ISO8583、硬件 SDK、SQLite 补录、蓝牙背夹。</p></div></div>
+      <div class="tl-row"><div class="tl-time">2016.03 - 2017.09</div><div class="tl-node"><span class="tl-dot"></span></div><div class="tl-body"><h3>Android 开发工程师</h3><div class="co">深圳韵动怡乐</div><p>易韵动运动社区 App，ViewPager + Fragment，打包 / 加密 / 多商店上线。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="edu">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">05</span><span class="sec-title">教育背景</span><span class="sec-line"></span></div>
+    <div class="edu-grid">
+      <div class="box">
+        <h3>湖北科技学院</h3>
+        <div class="sub">本科 · 应用心理学 · 2010 - 2014</div>
+      </div>
+      <div class="box">
+        <h3>资格证书</h3>
+        <div class="badges"><span class="badge">CET-6 大学英语六级</span><span class="badge">全国计算机等级二级</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-poem">
+      <div class="fp-quote">「</div>
+      <div class="fp-line">路虽远，行则将至</div>
+      <div class="fp-line hl">事虽难，做则必成</div>
+      <div class="fp-quote">」</div>
+    </div>
+    <div class="foot-meta">
+      <span class="copy">© 2026 黎广 · 以代码为笔，以设备为纸</span>
+      <a class="backtop" href="javascript:void(0)" onclick="backTop()">↑ 回到顶部</a>
+    </div>
+  </div>
+</footer>
+
+<!-- 联系弹窗 -->
+<div class="modal-overlay" id="contactModal" onclick="if(event.target===this)closeContact()">
+  <div class="modal">
+    <div class="modal-head">
+      <span class="mt" id="modalTitle">联系我</span>
+      <span class="close" onclick="closeContact()">×</span>
+    </div>
+    <div class="modal-body">
+      <div class="opt-list" id="mainView">
+        <a class="opt" href="tel:13113613895">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+          <span><div class="t1">电话联系</div><div class="t2">131 1361 3895</div></span>
+          <span class="go">›</span>
+        </a>
+        <a class="opt" href="mailto:teigkuang@163.com?subject=来自个人简历的沟通">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><div class="t1">邮件联系</div><div class="t2">teigkuang@163.com</div></span>
+          <span class="go">›</span>
+        </a>
+        <a class="opt" href="javascript:void(0)" onclick="launchWechat()">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM16 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.4 1.4 4.6 3.6 6-.3 1.1-.8 2-1.6 2.7 1.4-.2 2.7-.8 3.6-1.6 1.5.5 3 .7 4.4.7 5.5 0 10-3.5 10-7.8S17.5 3 12 3z"/></svg></span>
+          <span><div class="t1">添加微信</div><div class="t2">freevercool</div></span>
+          <span class="go">›</span>
+        </a>
+      </div>
+      <div class="wx-panel" id="wxView">
+        <div class="wx-row">
+          <span class="wx-id">freevercool</span>
+          <button class="mini-btn" onclick="copyText('freevercool','微信号已复制')">复制微信号</button>
+        </div>
+        <div class="wx-qr" style="border:none"><img src="img/wechat-qr.jpg" alt="微信二维码" style="width:100%;height:100%;object-fit:contain;border-radius:6px"></div>
+        <div class="tip">扫码或复制微信号，添加微信好友</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 统计卡详情弹窗 -->
+<div class="modal-overlay" id="detailModal" onclick="if(event.target===this)closeDetail()">
+  <div class="modal">
+    <div class="modal-head">
+      <span class="mt" id="detailTitle">详情</span>
+      <span class="close" onclick="closeDetail()">×</span>
+    </div>
+    <div class="modal-body">
+      <div id="detailBody"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

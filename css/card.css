@@ -1,0 +1,43 @@
+/* ============================================================
+   电子名片页样式
+   ============================================================ */
+.card-page{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px}
+.card-page{min-height:100svh}   /* 移动端用可见视口高度，避免 URL 栏导致的底部多余留白 */
+
+/* 返回主页：置顶左上角 */
+.card-back{position:fixed;top:16px;left:18px;z-index:60;display:inline-flex;align-items:center;gap:6px;
+  color:var(--muted);text-decoration:none;font-size:13.5px;padding:7px 14px;border-radius:100px;
+  background:rgba(15,24,40,.55);border:1px solid var(--line);transition:color .2s,border-color .2s}
+.card-back:hover{color:var(--accent);border-color:var(--accent)}
+
+/* 名片卡：90 × 54mm，标准名片比例 5:3 */
+.bcard{width:480px;max-width:92vw;aspect-ratio:90/54;border-radius:8px;overflow:hidden;position:relative;
+  background:radial-gradient(120% 140% at 85% -20%, rgba(34,211,238,.16) 0%, transparent 55%),
+             linear-gradient(160deg,#0F1828 0%, #0B1220 60%, #080D16 100%);
+  box-shadow:0 30px 70px rgba(0,0,0,.6);display:flex;flex-direction:column;padding:22px 26px}
+.bcard-brand{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);letter-spacing:.4px}
+.bcard-brand .mk{width:22px;height:22px;flex:none}
+.bcard-brand .mk svg{width:100%;height:100%;display:block}
+.bcard-main{display:flex;align-items:center;gap:20px;flex:1;margin-top:18px}
+.bcard-avatar{flex:none;width:70px;height:70px;border-radius:50%;overflow:hidden;border:2px solid var(--line);box-shadow:0 0 0 4px rgba(34,211,238,.08)}
+.bcard-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.bcard-name{font-size:34px;font-weight:800;letter-spacing:4px;line-height:1.05}
+.bcard-title{font-size:14px;font-weight:600;margin-top:6px;color:var(--ink)}
+.bcard-title span{color:var(--accent);padding:0 3px}
+.bcard-focus{font-size:12px;color:var(--muted);margin-top:5px}
+.bcard-contact{display:flex;flex-direction:column;gap:5px;padding:10px 0}
+.c-item{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12.5px;text-decoration:none;transition:color .2s}
+.c-item:hover{color:var(--accent)}
+.c-item .c-ico{width:15px;height:15px;flex:none;color:var(--accent)}
+.c-item .c-ico svg{width:100%;height:100%;display:block}
+
+/* 名片右上角：保存名片按钮 */
+.bcard-save{position:absolute;top:14px;right:14px;z-index:5;display:inline-flex;align-items:center;gap:6px;
+  padding:7px 14px;border-radius:100px;font-size:12.5px;cursor:pointer;
+  color:var(--accent);background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.45);transition:.2s}
+.bcard-save:hover{background:rgba(34,211,238,.24)}
+
+@media (max-width:520px){
+  .card-page{padding:28px 16px}
+  /* 名片不在此处改内部尺寸：由 JS 按 480×288 设计稿整体等比缩放，保证与导出图一致 */
+}
